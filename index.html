@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkMark Electronics - Premium Electronic Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-bolt"></i>
+                    <span>SparkMark Electronics</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#products" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Premium Electronic Products</h1>
+            <p>Discover high-quality earphones, chargers, cables, Bluetooth speakers, and more at unbeatable prices.</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Electronics">
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">All</button>
+                <button class="tab-btn" data-category="earphones">Earphones</button>
+                <button class="tab-btn" data-category="charging">Charging</button>
+                <button class="tab-btn" data-category="speakers">Bluetooth Speakers</button>
+                <button class="tab-btn" data-category="extensions">Extensions</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Dr lee earphones -->
+                <div class="product-card" data-category="earphones">
+                    <div class="product-image">
+                        <img src="images/IMG-20250227-WA0075.webp" alt="Dr lee earphones">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="101">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Dr lee Earphones</h3>
+                        <p>Clear sound, comfortable fit</p>
+                        <div class="product-price">
+                            <span class="price">KSh 150</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(24 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- TX speakers -->
+                <div class="product-card" data-category="speakers">
+                    <div class="product-image">
+                        <img src="images/IMG-20250227-WA0068.webp" alt="TX speakers">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="102">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>TX Speakers</h3>
+                        <p>Portable, powerful sound</p>
+                        <div class="product-price">
+                            <span class="price">KSh 120</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(15 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Toshiba Flash drive 32gb -->
+                <div class="product-card" data-category="extensions">
+                    <div class="product-image">
+                        <img src="images/IMG-20250227-WA0063.webp" alt="Toshiba Flash drive 32gb">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="103">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Toshiba Flash Drive 32GB</h3>
+                        <p>Reliable storage, fast transfer</p>
+                        <div class="product-price">
+                            <span class="price">KSh 1,500</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(10 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Type-C charging cable -->
+                <div class="product-card" data-category="charging">
+                    <div class="product-image">
+                        <img src="images/IMG-20250227-WA0052.webp" alt="Type-C charging cable">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="104">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Type-C Charging Cable</h3>
+                        <p>Fast charging, durable build</p>
+                        <div class="product-price">
+                            <span class="price">KSh 200</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(18 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Excellent 2ports charger -->
+                <div class="product-card" data-category="charging">
+                    <div class="product-image">
+                        <img src="images/IMG-20250227-WA0045.webp" alt="Excellent 2ports charger">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="105">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Excellent 2-Ports Charger</h3>
+                        <p>Dual USB, fast charging</p>
+                        <div class="product-price">
+                            <span class="price">KSh 250</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(22 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Oraimo C-cable -->
+                <div class="product-card" data-category="charging">
+                    <div class="product-image">
+                        <img src="images/IMG-20250227-WA0006.webp" alt="Oraimo C-cable">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="106">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Oraimo C-Cable</h3>
+                        <p>Reliable, high-speed charging</p>
+                        <div class="product-price">
+                            <span class="price">KSh 200</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(14 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- JBL wireless headphone -->
+                <div class="product-card" data-category="earphones">
+                    <div class="product-image">
+                        <img src="images/IMG-20250227-WA0004.webp" alt="JBL wireless headphone">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="107">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>JBL Wireless Headphone</h3>
+                        <p>Wireless, deep bass, long battery</p>
+                        <div class="product-price">
+                            <span class="price">KSh 3,000</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(30 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Micro USB cable -->
+                <div class="product-card" data-category="charging">
+                    <div class="product-image">
+                        <img src="images/IMG-20250227-WA0002.webp" alt="Micro USB cable">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-id="108">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Micro USB Cable</h3>
+                        <p>Universal compatibility, fast charge</p>
+                        <div class="product-price">
+                            <span class="price">KSh 150</span>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(12 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About SparkMark Electronics</h2>
+                    <p>We are passionate about providing high-quality electronic products that enhance your daily life. Our carefully curated selection includes the latest in audio technology, charging solutions, and connectivity products.</p>
+                    <p>With years of experience in the electronics industry, we understand what makes a great product. That's why we only stock items that meet our strict quality standards and offer exceptional value to our customers.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h3>Fast Shipping</h3>
+                            <p>Free shipping on orders over $50</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Quality Guarantee</h3>
+                            <p>30-day money-back guarantee</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <h3>24/7 Support</h3>
+                            <p>Expert customer service</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Electronics Street<br>Tech City, TC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>0794972477</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@sparkmarkelectronics.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p><a href="https://wa.me/254794972477" target="_blank" rel="noopener" style="color: #25D366; text-decoration: none;">Chat on WhatsApp</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Mon-Fri: 9AM-6PM<br>Sat: 10AM-4PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SparkMark Electronics</h3>
+                    <p>Your trusted source for premium electronic products.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/254794972477" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#products">Earphones</a></li>
+                        <li><a href="#products">Charging</a></li>
+                        <li><a href="#products">Speakers</a></li>
+                        <li><a href="#products">Extensions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SparkMark Electronics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Shopping Cart</h3>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-total">
+                <h4>Total: KSh <span id="cartTotal">0.00</span></h4>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
